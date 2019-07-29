@@ -1,0 +1,141 @@
+<h3 class="mat-h3"><a target="_blank" href="/assets/schema.json">GraphQL schema</a></h3>
+
+<div *ngIf="graphqlSchemaRoot">
+<h2 class="mat-h2">1) Select the element type (one per line)</h2>
+<mat-radio-group aria-label="Select an option">
+  <mat-radio-button  *ngFor="let field of graphqlSchemaRoot.fields" [value]="field.name" (click)="documentChange(field)">{{field.name}}</mat-radio-button>
+</mat-radio-group>
+
+<mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
+    <mat-tree-node *matTreeNodeDef="let node" matTreeNodeToggle matTreeNodePadding>
+      <button mat-icon-button disabled></button>
+      <mat-checkbox class="checklist-leaf-node"
+                    [checked]="checklistSelection.isSelected(node)"
+                    (change)="todoLeafItemSelectionToggle(node)">{{node.item}}</mat-checkbox>
+    </mat-tree-node>
+  
+    <mat-tree-node *matTreeNodeDef="let node; when: hasNoContent" matTreeNodePadding>
+      <button mat-icon-button disabled></button>
+      <mat-form-field>
+        <input matInput #itemValue placeholder="New item...">
+      </mat-form-field>
+      <button mat-button (click)="saveNode(node, itemValue.value)">Save</button>
+    </mat-tree-node>
+  
+    <mat-tree-node *matTreeNodeDef="let node; when: hasChild" matTreeNodePadding>
+      <button mat-icon-button matTreeNodeToggle
+              [attr.aria-label]="'toggle ' + node.filename">
+        <mat-icon class="mat-icon-rtl-mirror">
+          {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+        </mat-icon>
+      </button>
+      <mat-checkbox [checked]="descendantsAllSelected(node)"
+                    [indeterminate]="descendantsPartiallySelected(node)"
+                    (change)="todoItemSelectionToggle(node)">{{node.item}}</mat-checkbox>
+    </mat-tree-node>
+  </mat-tree>
+
+<h2 class="mat-h2">2) Add constraints</h2>
+<mat-card>
+  <query-builder [(ngModel)]='query' [config]='currentConfig'>
+    <ng-container
+      *queryButtonGroup="let ruleset; let addRule=addRule; let addRuleSet=addRuleSet; let removeRuleSet=removeRuleSet">
+      <button type="button" mat-icon-button color="primary" (click)="addRule()">
+        <mat-icon>add</mat-icon>
+      </button>
+      <button type="button" mat-icon-button color="primary" *ngIf="addRuleSet" (click)="addRuleSet()">
+        <mat-icon>add_circle_outline</mat-icon>
+      </button>
+      <button type="button" mat-icon-button color="accent" *ngIf="removeRuleSet" (click)="removeRuleSet()">
+        <mat-icon>remove_circle_outline</mat-icon>
+      </button>
+    </ng-container>
+    <ng-container *queryArrowIcon>
+      <mat-icon ngClass="mat-arrow-icon">chevron_right</mat-icon>
+    </ng-container>
+    <ng-container *queryRemoveButton="let rule; let removeRule=removeRule">
+      <button type="button" mat-icon-button color="accent" (click)="removeRule(rule)">
+        <mat-icon>remove</mat-icon>
+      </button>
+    </ng-container>
+    <ng-container *querySwitchGroup="let ruleset; let onChange=computeGraphQLQuery">
+      <mat-radio-group *ngIf="ruleset" [(ngModel)]="ruleset.condition" (ngModelChange)="computeGraphQLQuery($event)">
+        <mat-radio-button [style.padding.px]="10" value="and">And</mat-radio-button>
+        <mat-radio-button [style.padding.px]="10" value="or">Or</mat-radio-button>
+      </mat-radio-group>
+    </ng-container>
+    <ng-container *queryEntity="let rule; let entities=entities; let onChange=computeGraphQLQuery">
+      <mat-form-field>
+        <mat-select [(ngModel)]="rule.entity" (ngModelChange)="computeGraphQLQuery($event, rule)">
+          <mat-option *ngFor="let entity of entities" [value]="entity.value">
+            {{entity.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </ng-container>
+    <ng-container *queryField="let rule; let fields=fields; let onChange=computeGraphQLQuery; let getFields = getFields">
+      <mat-form-field>
+        <mat-select  [(ngModel)]="rule.field" (ngModelChange)="computeGraphQLQuery($event, rule)">
+          <mat-option *ngFor="let field of getFields(rule.entity)" [value]="field.value">
+            {{ field.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </ng-container>
+    <ng-container *queryOperator="let rule; let operators=operators; let onChange=onChange">
+      <mat-form-field [style.width.px]="200">
+        <mat-select [(ngModel)]="rule.operator">
+          <mat-option *ngFor="let value of operators" [value]="value">
+            {{ value }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </ng-container>
+    <ng-container *queryInput="let rule; type: 'boolean'; let onChange=onChange">
+      <mat-checkbox [(ngModel)]="rule.value" (ngModelChange)="computeGraphQLQuery()"></mat-checkbox>
+    </ng-container>
+    <ng-container *queryInput="let rule; let field=field; let options=options; type: 'category'; let onChange=computeGraphQLQuery">
+      <mat-form-field>
+        <mat-select [(ngModel)]="rule.value" (ngModelChange)="computeGraphQLQuery()">
+          <mat-option *ngFor="let opt of options" [value]="opt.value">
+            {{ opt.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </ng-container>
+    <ng-container *queryInput="let rule; type: 'date'; let onChange=computeGraphQLQuery">
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker" [(ngModel)]="rule.value" (ngModelChange)="computeGraphQLQuery()">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </ng-container>
+    <ng-container *queryInput="let rule; let options=options; type: 'multiselect'; let onChange=computeGraphQLQuery">
+      <mat-form-field [style.width.px]="300">
+        <mat-select [(ngModel)]="rule.value" multiple (ngModelChange)="computeGraphQLQuery()">
+          <mat-option *ngFor="let opt of options" [value]="opt.value">
+            {{ opt.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </ng-container>
+    <ng-container *queryInput="let rule; let field=field; type: 'number'; let onChange=computeGraphQLQuery">
+      <mat-form-field [style.width.px]="50">
+        <input matInput [(ngModel)]="rule.value" type="number" (ngModelChange)="computeGraphQLQuery()">
+      </mat-form-field>
+    </ng-container>
+    <ng-container *queryInput="let rule; let field=field; type: 'string'; let onChange=computeGraphQLQuery">
+      <mat-form-field>
+        <input matInput [(ngModel)]="rule.value" (ngModelChange)="computeGraphQLQuery()">
+      </mat-form-field>
+    </ng-container>
+    <ng-container *queryInput="let rule; let field=field; type: 'textarea'; let onChange=computeGraphQLQuery">
+      <mat-form-field>
+        <textarea matInput [(ngModel)]="rule.value" (ngModelChange)="computeGraphQLQuery()">
+        </textarea>
+      </mat-form-field>
+    </ng-container>
+  </query-builder>
+</mat-card>
+<ngx-monaco-editor [(ngModel)]="graphqlQuery" [options]="editorOptions"></ngx-monaco-editor>
+</div>

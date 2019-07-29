@@ -1,0 +1,8263 @@
+{
+	"data": {
+	  "__schema": {
+		"queryType": {
+		  "name": "Query"
+		},
+		"mutationType": null,
+		"subscriptionType": null,
+		"types": [
+		  {
+			"kind": "OBJECT",
+			"name": "Query",
+			"description": "La racine du graph pour faire des requêtages",
+			"fields": [
+			  {
+				"name": "act",
+				"description": "Recherche dans les actes",
+				"args": [
+				  {
+					"name": "where",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "ActWhereQuery",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "orderBy",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "OrderBy",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "first",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "skip",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "Act",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "document",
+				"description": "Recherche de documents",
+				"args": [
+				  {
+					"name": "where",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "DocumentWhereQuery",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "orderBy",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "OrderBy",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "first",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "skip",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "Document",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "eds",
+				"description": "Recherche d'épisodes de soins",
+				"args": [
+				  {
+					"name": "where",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "EdsWhereQuery",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "orderBy",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "OrderBy",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "first",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "skip",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "Eds",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "equipment",
+				"description": "Recherche des équipements",
+				"args": [
+				  {
+					"name": "where",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "EquipmentWhereQuery",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "orderBy",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "OrderBy",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "first",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "skip",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "Equipment",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "labo",
+				"description": "Recherche des résultats de laboratoires",
+				"args": [
+				  {
+					"name": "where",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "LaboWhereQuery",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "orderBy",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "OrderBy",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "first",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "skip",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "Labo",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "participation",
+				"description": "Recherche de passages (appartenent à un épisode de soins",
+				"args": [
+				  {
+					"name": "where",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "ParticipationWhereQuery",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "orderBy",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "OrderBy",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "first",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "skip",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "Participation",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "passage",
+				"description": "Recherche de passages (appartenent à un épisode de soins",
+				"args": [
+				  {
+					"name": "where",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "PassageWhereQuery",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "orderBy",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "OrderBy",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "first",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "skip",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "Passage",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "patient",
+				"description": "Recherche de patients",
+				"args": [
+				  {
+					"name": "where",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "PatientWhereQuery",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "orderBy",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "OrderBy",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "first",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "skip",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "Patient",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "pf_dataset",
+				"description": "Recherche de formulaires",
+				"args": [
+				  {
+					"name": "where",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "PFDatasetWhereQuery",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "orderBy",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "OrderBy",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "first",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "skip",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "PFDataset",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "pos_entity",
+				"description": "Recherche dans le POS (Organigramme structurelle)",
+				"args": [
+				  {
+					"name": "where",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "PosEntityWhereQuery",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "orderBy",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "OrderBy",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "first",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "skip",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "PosEntity",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "prescription",
+				"description": "Recherche dans les prescriptions",
+				"args": [
+				  {
+					"name": "where",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "PrescriptionWhereQuery",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "orderBy",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "OrderBy",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "first",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "skip",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "Prescription",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"inputFields": null,
+			"interfaces": [
+			  
+			],
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "SCALAR",
+			"name": "Int",
+			"description": "Built-in Int",
+			"fields": null,
+			"inputFields": null,
+			"interfaces": null,
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "OBJECT",
+			"name": "Act",
+			"description": "Les actes de l'écheancier",
+			"fields": [
+			  {
+				"name": "aborted_date",
+				"description": "aborted_date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "activity_date",
+				"description": "activity_date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "activity_duration",
+				"description": "activity_duration",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Int",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "application",
+				"description": "application",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "completed_date",
+				"description": "completed_date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "motivation",
+				"description": "motivation",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "motivation_key",
+				"description": "motivation_key",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "motivation_system_code",
+				"description": "motivation_system_code",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "nullified_date",
+				"description": "nullified_date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "passage_at_completed",
+				"description": "Le passage associé à la date comple",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "Passage",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "patient",
+				"description": "Le patient associé à ce résultat de laboratoire",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "Patient",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "patient_id",
+				"description": "patient_id",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "planned_date",
+				"description": "planned_date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "planned_end_date",
+				"description": "planned_end_date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "precision",
+				"description": "precision",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "prescription",
+				"description": "Retourne la prescription medical associée à un acte",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "Prescription",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "properties_array",
+				"description": "properties_array",
+				"args": [
+				  {
+					"name": "property_key_in",
+					"description": "",
+					"type": {
+					  "kind": "LIST",
+					  "name": null,
+					  "ofType": {
+						"kind": "SCALAR",
+						"name": "String",
+						"ofType": null
+					  }
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "KeyValueString",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "properties_value",
+				"description": "properties_value",
+				"args": [
+				  {
+					"name": "property_key_eq",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "String",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "property_value",
+				"description": "property_value",
+				"args": [
+				  {
+					"name": "property_key_eq",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "String",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "status_code",
+				"description": "status_code",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "task",
+				"description": "Retourne la tâche associée à un acte",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "Task",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "task_id",
+				"description": "task_id",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "task_properties_array",
+				"description": "task_properties_array",
+				"args": [
+				  {
+					"name": "property_key_in",
+					"description": "",
+					"type": {
+					  "kind": "LIST",
+					  "name": null,
+					  "ofType": {
+						"kind": "SCALAR",
+						"name": "String",
+						"ofType": null
+					  }
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "KeyValueString",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "task_properties_value",
+				"description": "task_properties_value",
+				"args": [
+				  {
+					"name": "property_key_eq",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "String",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "version",
+				"description": "version",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "version_date",
+				"description": "version_date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "version_login",
+				"description": "version_login",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"inputFields": null,
+			"interfaces": [
+			  
+			],
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "SCALAR",
+			"name": "Date",
+			"description": "Hardcoded scalars and enums (not yet generated)\nLe scalar date",
+			"fields": null,
+			"inputFields": null,
+			"interfaces": null,
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "SCALAR",
+			"name": "String",
+			"description": "Built-in String",
+			"fields": null,
+			"inputFields": null,
+			"interfaces": null,
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "OBJECT",
+			"name": "Document",
+			"description": "Documents associé à un patient",
+			"fields": [
+			  {
+				"name": "content_text",
+				"description": "The content text",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "creation_date",
+				"description": "The creation date of the document",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "doc_version_id",
+				"description": "The document version id",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "doctype",
+				"description": "Le type de document",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "DocumentDocType",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "document_key",
+				"description": "The document key (unique for several version of the document)",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "eds",
+				"description": "L'eds associé au document",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "Eds",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "eds_id",
+				"description": "L'EDS id correspondant au document",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "extension",
+				"description": "The extension of the document: pdf, rtf, png",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "id",
+				"description": "id",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "NON_NULL",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "ID",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "insertion_date",
+				"description": "The insertion date of the document",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "material_label",
+				"description": "Le type de materiel",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "passage",
+				"description": "Le passage associé au document",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "Passage",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "passage_id",
+				"description": "Le passage id correspondant au document",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "patient",
+				"description": "Le patient associé au document",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "Patient",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "sermed",
+				"description": "Le service associé au document",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "PosEntity",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "sermed_id",
+				"description": "Le sermed id correspondant au document",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "source",
+				"description": "The source (ex: Formidoc)",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"inputFields": null,
+			"interfaces": [
+			  
+			],
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "SCALAR",
+			"name": "ID",
+			"description": "Built-in ID",
+			"fields": null,
+			"inputFields": null,
+			"interfaces": null,
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "OBJECT",
+			"name": "Eds",
+			"description": "Épisode de soins",
+			"fields": [
+			  {
+				"name": "ambulatory",
+				"description": "Retourne TRUE si le patient n'a pas passé minuit à l'hôpital, sinon FALSE",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Boolean",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "begin_date",
+				"description": "La date du début de l'EDS",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "cds_code",
+				"description": "",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "clinisoft",
+				"description": "Gets clinisoft data",
+				"args": [
+				  {
+					"name": "where",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "ClinisoftWhereQuery",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "orderBy",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "OrderBy",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "first",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "skip",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "Clinisoft",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "end_date",
+				"description": "La date de fin de l'EDS",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "id",
+				"description": "L'ID de l'eds",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "NON_NULL",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "ID",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "labo",
+				"description": "Les résultats de laboratoires associés à l'EDS",
+				"args": [
+				  {
+					"name": "where",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "LaboWhereQuery",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "orderBy",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "OrderBy",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "first",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "skip",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "Labo",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "participation",
+				"description": "Les participations associées à l'épisode de soins",
+				"args": [
+				  {
+					"name": "where",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "ParticipationWhereQuery",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "Participation",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "passage",
+				"description": "Les passages associés à l'épisode de soins",
+				"args": [
+				  {
+					"name": "where",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "PassageWhereQuery",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "Passage",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "patient",
+				"description": "Le patient associé à l'EDS",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "Patient",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "patient_age_at_eds_begin_date",
+				"description": "Calcule l'âge du patient lors du début de l'épisode",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Int",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "pf_dataset",
+				"description": "Les formulaires associés à l'EDS",
+				"args": [
+				  {
+					"name": "where",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "PFDatasetWhereQuery",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "orderBy",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "OrderBy",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "first",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "skip",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "PFDataset",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "status_code",
+				"description": "Le status de l'EDS, peut-être: 'TERMINE', 'EN COURS', 'PREVU' (date future)",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "stay",
+				"description": "Le séjour associé à l'épisode de soins, peut être le même",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "Eds",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "stay_id",
+				"description": "Le numéro de séjour",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "type_code",
+				"description": "Le type de EDS:(HOSP. AMBU.). Certaines unités comme le service d'urgence, admet  toujours en HOSP. car cela permet des déplacements. Pour savoir si le patient n'a pas passé minuit, utiliser la proprieté: ambulatory",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"inputFields": null,
+			"interfaces": [
+			  
+			],
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "SCALAR",
+			"name": "Boolean",
+			"description": "Built-in Boolean",
+			"fields": null,
+			"inputFields": null,
+			"interfaces": null,
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "OBJECT",
+			"name": "Equipment",
+			"description": "Les équipements associés à un patient",
+			"fields": [
+			  {
+				"name": "calculated_duration",
+				"description": "La durée calculée",
+				"args": [
+				  {
+					"name": "unit",
+					"description": "The chronounit",
+					"type": {
+					  "kind": "ENUM",
+					  "name": "MagellanChronoUnit",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "resolve",
+					"description": "Resolve to now if calculated_remove_datetime is null",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Boolean",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Int",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "calculated_put_datetime",
+				"description": "La date de mise en place de l'équipement",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "calculated_remove_datetime",
+				"description": "La date de retirage de l'équipement",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "creation_datetime",
+				"description": "Date de création",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "creation_user_id",
+				"description": "Initiales de l'utilisateur lors de la création",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "dic_id",
+				"description": "Le dictionaire d'equipement",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "duration",
+				"description": "La durée (number)",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Int",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "duration_str",
+				"description": "La durée (string)",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "eds",
+				"description": "Le eds associé à cet équipement",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "Eds",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "eds_id",
+				"description": "Les eds",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "id",
+				"description": "L'ID de l'instance de équipement",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "ID",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "input_invalidate_user_id",
+				"description": "input_invalidate_user_id",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "label",
+				"description": "label",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "last_udpate_user_id",
+				"description": "Initiales de l'utilisateur lors de la dernière mise à jour",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "last_update_datetime",
+				"description": "Date de la dernière mise à jour",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "passage_at_put",
+				"description": "Le passage associé à la pose de l'équipement",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "Passage",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "passage_at_remove",
+				"description": "Le passage associé au retrait de l'équipement",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "Passage",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "patient",
+				"description": "Le patient associé à cet équipement",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "Patient",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "patient_id",
+				"description": "Le patient",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "put_type_datetime",
+				"description": "Le type de l utilisateur (peut-être ambulancier par example)",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "put_user_id",
+				"description": "Initiales de l'utilisateur qui a placé l'équipement",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "put_user_type_id",
+				"description": "Le type de l utilisateur: peut-être user ou bien others, dans le cas d'un ambulancier par exemple. Voir put_user_type_label pour plus d'information sur le type",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "put_user_type_label",
+				"description": "Le type de l utilisateur (peut-être ambulancier par example)",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "short_label",
+				"description": "Short label",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "zone_code",
+				"description": "Le code de la zone où est placé l'équipement, ex: AVANT_BRAS_D",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "zone_label",
+				"description": "La zone où est placé l'équipement, ex: Avant-Bras Droit",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"inputFields": null,
+			"interfaces": [
+			  
+			],
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "OBJECT",
+			"name": "Labo",
+			"description": "Un résultat de laboratoire",
+			"fields": [
+			  {
+				"name": "analyse_code",
+				"description": "analyse_code",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "analyse_label",
+				"description": "analyse_label",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "antibiogrammes",
+				"description": "Les antibiogrammes",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "LaboAntibiogrammes",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "careunit_mnemo",
+				"description": "careunit_mnemo",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "comments",
+				"description": "Les commentaires sur le résultat de laboratoire",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "LaboComment",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "dosage_code",
+				"description": "dosage_code",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "dosage_label",
+				"description": "dosage_label",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "eds",
+				"description": "L'épisode de soins associé à ce résultat de laboratoire",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "Eds",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "eds_id",
+				"description": "eds_id",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "id",
+				"description": "id",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "NON_NULL",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "ID",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "lab_no",
+				"description": "lab_no",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "lab_no_orig",
+				"description": "lab_no_orig",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "loinc",
+				"description": "loinc code",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "material_code",
+				"description": "material_code",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "material_label",
+				"description": "material_label",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "patient",
+				"description": "Le patient associé à ce résultat de laboratoire",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "Patient",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "patient_id",
+				"description": "patient_id",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "sample_date",
+				"description": "La date de l'échantillon",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "sample_date_format",
+				"description": "La date de l'echantillon dans un format specifier",
+				"args": [
+				  {
+					"name": "format",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "String",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "sample_reception_at_lab_date",
+				"description": "La date de réception au laboratoire",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "unit_of_measure",
+				"description": "unit_of_measure",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "validation_date",
+				"description": "validation_date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "value_str",
+				"description": "value_str",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"inputFields": null,
+			"interfaces": [
+			  
+			],
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "OBJECT",
+			"name": "Participation",
+			"description": "Une participation dans un passage (un lit, une chambre, ...)",
+			"fields": [
+			  {
+				"name": "begin_date",
+				"description": "La date de début de la participation",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "category_code",
+				"description": "Le code de la catégorie",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "eds",
+				"description": "L'EDS",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "Eds",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "end_date",
+				"description": "La date de fin de la participation",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "extended_end_date",
+				"description": "La date étendue du fin de la participation",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "function",
+				"description": "La fonction peut-être une CHAMBRE, LIT, SERMED, UNITE, PATIENT, MEDECIN PRINCIPAL, PROVENANCE, NIVSOIN, SERINF ....",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "id",
+				"description": "L'id de la participation",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "label",
+				"description": "Le label",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "note",
+				"description": "La note",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "pos_entity",
+				"description": "Get pos entity",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "PosEntity",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "status_code",
+				"description": "status_code",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "type",
+				"description": "Le type",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"inputFields": null,
+			"interfaces": [
+			  
+			],
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "OBJECT",
+			"name": "Passage",
+			"description": "Le passage d'un patient pendant un épisode de soins (eds) découpé par unité de soins et service",
+			"fields": [
+			  {
+				"name": "begin_date",
+				"description": "La date à laquelle le patient est rentré dans l'unité de soins et service. La valeur peut-être dans le future pour un eds avec un status_code:<i>PREVU</i>",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "care_unit",
+				"description": "L'unité de soins",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "PassageCareUnit",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "eds",
+				"description": "L'EDS associé",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "Eds",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "eds_id",
+				"description": "ID de l'eds",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "end_date",
+				"description": "La date à laquelle le patient est sorti de l'unité de soins et service. La valeur peut-être null si le patient est encore présent dans l'unité de soin / service",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "id",
+				"description": "ID du passage",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "NON_NULL",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "ID",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "patient",
+				"description": "Retourne le patient",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "Patient",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "patient_age_at_passage_begin_date",
+				"description": "Calcule l'âge du patient lors du début de l'épisode",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Int",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "prescription",
+				"description": "Retourne les prescriptions associées à un passage: la date de la création de la prescription doit être comprise entre le début et la fin du passsage",
+				"args": [
+				  {
+					"name": "where",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "PrescriptionWhereQuery",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "orderBy",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "OrderBy",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "first",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "skip",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "Prescription",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "sermed",
+				"description": "Le service associé",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "PassageSermed",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"inputFields": null,
+			"interfaces": [
+			  
+			],
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "OBJECT",
+			"name": "Patient",
+			"description": "Un patient des HUGs",
+			"fields": [
+			  {
+				"name": "address",
+				"description": "L'adresse du patient (Rue, ....)",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "address_city",
+				"description": "La ville de l'adresse du patient",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "address_country",
+				"description": "Le pays de l'addresse du patient",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "address_zipcode",
+				"description": "Le zip code de l'adresse du patient",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "age",
+				"description": "The age of the patient estimated at the current time or when dead (if this information is found). Probably this only makes sense in the EDS.",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Int",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "birth_datetime",
+				"description": "La date de naissance du patient",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "birth_year",
+				"description": "The birth year",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Int",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "death_datetime",
+				"description": "La date de décés du patient hospitalisé?",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "document",
+				"description": "Les documents du patient",
+				"args": [
+				  {
+					"name": "where",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "DocumentWhereQuery",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "orderBy",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "OrderBy",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "first",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "skip",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "Document",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "eds",
+				"description": "Les épisodes de soins du patient",
+				"args": [
+				  {
+					"name": "where",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "EdsWhereQuery",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "orderBy",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "OrderBy",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "first",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "skip",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "Eds",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "first_name",
+				"description": "Le prénom du patient",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "general_consent",
+				"description": "Définit si le patient a signé le consentement général",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "id",
+				"description": "L'ID du patient, attention: Il faut utiliser plutôt unite_id",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "NON_NULL",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "ID",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "ids",
+				"description": "Tous les ids du patient (patient_id, unite_id, other_patient_ids)",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "initials",
+				"description": "Takes the first initial of the LAST_NAME and the first character of the first name",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "labo",
+				"description": "Les résultats de laboratoires du patient",
+				"args": [
+				  {
+					"name": "where",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "LaboWhereQuery",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "orderBy",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "OrderBy",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "first",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "skip",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "Labo",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "last_name",
+				"description": "Le nom de famille du patient",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "prescription",
+				"description": "Les préscriptions du patient",
+				"args": [
+				  {
+					"name": "where",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "PrescriptionWhereQuery",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "orderBy",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "OrderBy",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "first",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  },
+				  {
+					"name": "skip",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Int",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "Prescription",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "sex",
+				"description": "The sex of the patient (can either be M or F)",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "unite_id",
+				"description": "L'ID consolidé du patient",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"inputFields": null,
+			"interfaces": [
+			  
+			],
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "OBJECT",
+			"name": "PFDataset",
+			"description": "Un formulaire éléctronique (générique form) et autres?",
+			"fields": [
+			  {
+				"name": "application_code",
+				"description": "application_code",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "creation_date",
+				"description": "La date de création du formulaire",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "creation_login",
+				"description": "Les initiales de l'utilisateur qui a créé le document",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "datacontext_code",
+				"description": "datacontext_code, les notes de suites commencent par: NOTE_",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "datacontext_label",
+				"description": "datacontext_label",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "datacontext_version",
+				"description": "datacontext_version",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "eds",
+				"description": "L'eds associé au formulaire",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "Eds",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "eds_id",
+				"description": "eds_id",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "id",
+				"description": "L'ID du formulaire",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "NON_NULL",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "ID",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "passage",
+				"description": "Le passage associé au formulaire",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "Passage",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "passage_id",
+				"description": "passage_id",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "patient",
+				"description": "Le patient associé au formulaire",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "Patient",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "patient_id",
+				"description": "patient_id",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "sermed_id",
+				"description": "sermed_id",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "status",
+				"description": "Le status du formulaire",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "status_label",
+				"description": "Le libellée du status",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "structured_data",
+				"description": "Les données structurées du formulaire",
+				"args": [
+				  {
+					"name": "where",
+					"description": "",
+					"type": {
+					  "kind": "INPUT_OBJECT",
+					  "name": "PFDatasetStructuredDataWhereQuery",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "PFDatasetStructuredData",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "update_date",
+				"description": "La date de mise à jour du formulaire",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "update_login",
+				"description": "Les initiales de l'utilisateur qui a mis à jour le document",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"inputFields": null,
+			"interfaces": [
+			  
+			],
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "OBJECT",
+			"name": "PosEntity",
+			"description": "Entités du POS (Organigramme structurel) <a href='http://www.intrahug.ch/applications/pos'>POS</a>",
+			"fields": [
+			  {
+				"name": "begin_date",
+				"description": "begin_date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "category",
+				"description": "category",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "creation_date",
+				"description": "creation_date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "end_date",
+				"description": "end_date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "entity_type",
+				"description": "entity_type",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "id",
+				"description": "id",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "NON_NULL",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "ID",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "label",
+				"description": "label",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "long_label",
+				"description": "long_label",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "mnemo",
+				"description": "mnemo",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "type",
+				"description": "type",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"inputFields": null,
+			"interfaces": [
+			  
+			],
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "OBJECT",
+			"name": "Prescription",
+			"description": "Une prescription (ex: un médicament, un équipement, une mesure contact ... )",
+			"fields": [
+			  {
+				"name": "attributes_array",
+				"description": "attributes_array",
+				"args": [
+				  {
+					"name": "attribute_key_in",
+					"description": "",
+					"type": {
+					  "kind": "LIST",
+					  "name": null,
+					  "ofType": {
+						"kind": "SCALAR",
+						"name": "String",
+						"ofType": null
+					  }
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "KeyValueString",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "attributes_value",
+				"description": "attributes_values",
+				"args": [
+				  {
+					"name": "attribute_key_eq",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "String",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "category_code",
+				"description": "Catégorie de la prescription: IS, SCUT, Consultation, Examens,  ...",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "creation_date",
+				"description": "creation_date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "eds_id",
+				"description": "eds_id",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "end_date",
+				"description": "end_date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "id",
+				"description": "id",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "NON_NULL",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "ID",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "long_name",
+				"description": "long_name",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "passage",
+				"description": "Le passage associé au retrait de l'équipement",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "Passage",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "patient_id",
+				"description": "patient_id",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "short_name",
+				"description": "short_name",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "start_date",
+				"description": "start_date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "status",
+				"description": "Le status de la prescription: VALID, CHECKED, STOPPED, ...",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "type_id",
+				"description": "Type 1: pour médicaments, ...",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"inputFields": null,
+			"interfaces": [
+			  
+			],
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "OBJECT",
+			"name": "KeyValueString",
+			"description": "Key value use for stringString maps",
+			"fields": [
+			  {
+				"name": "key",
+				"description": "key",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "value",
+				"description": "value",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"inputFields": null,
+			"interfaces": [
+			  
+			],
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "OBJECT",
+			"name": "Task",
+			"description": "Une tâche qui est schedulée pour l'échancier",
+			"fields": [
+			  {
+				"name": "archive_date",
+				"description": "archive_date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "archive_status",
+				"description": "archive_status",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "creation_date",
+				"description": "creation_date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "creation_login",
+				"description": "creation_login",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "eds_id",
+				"description": "eds_id",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "endlessdate_act",
+				"description": "endlessdate_act",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "endlessdate_act_max_date",
+				"description": "endlessdate_act_max_date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "first_act_date",
+				"description": "first_act_date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "flag_to_history",
+				"description": "flag_to_history",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "group_key",
+				"description": "group_key",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "id",
+				"description": "The id of the task",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "NON_NULL",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "ID",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "information",
+				"description": "information",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "last_act_end_date",
+				"description": "last_act_end_date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "object_key",
+				"description": "object_key",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "parent_task_id",
+				"description": "parent_task_id",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "patient_id",
+				"description": "patient_id",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "planif_cron",
+				"description": "planif_cron",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "planif_start_date",
+				"description": "planif_start_date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "planif_stop_date",
+				"description": "planif_stop_date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "planif_stop_date_string",
+				"description": "planif_stop_date_string",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "prescription",
+				"description": "Retourne la tâche associée à un acte",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "Prescription",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "priority_code",
+				"description": "priority_code",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "properties_array",
+				"description": "properties_array",
+				"args": [
+				  {
+					"name": "property_key_in",
+					"description": "",
+					"type": {
+					  "kind": "LIST",
+					  "name": null,
+					  "ofType": {
+						"kind": "SCALAR",
+						"name": "String",
+						"ofType": null
+					  }
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "KeyValueString",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "properties_value",
+				"description": "properties_value",
+				"args": [
+				  {
+					"name": "property_key_eq",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "String",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "start_date",
+				"description": "start_date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "status_code",
+				"description": "status_code",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "stop_login",
+				"description": "stop_login",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "task_key",
+				"description": "task_key",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "theoretical_start_date",
+				"description": "theoretical_start_date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "theoretical_stop_date",
+				"description": "theoretical_stop_date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "type_task_aborted_right",
+				"description": "type_task_aborted_right",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "type_task_actduplicable",
+				"description": "type_task_actduplicable",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "type_task_application_linked",
+				"description": "type_task_application_linked",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "type_task_id",
+				"description": "type_task_id",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "type_task_movable",
+				"description": "type_task_movable",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "type_task_properties_array",
+				"description": "type_task_properties_array",
+				"args": [
+				  {
+					"name": "property_key_in",
+					"description": "",
+					"type": {
+					  "kind": "LIST",
+					  "name": null,
+					  "ofType": {
+						"kind": "SCALAR",
+						"name": "String",
+						"ofType": null
+					  }
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "KeyValueString",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "type_task_properties_value",
+				"description": "type_task_properties_value",
+				"args": [
+				  {
+					"name": "property_key_eq",
+					"description": "",
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "String",
+					  "ofType": null
+					},
+					"defaultValue": null
+				  }
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "type_task_sc_completed_before",
+				"description": "type_task_sc_completed_before",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "type_task_sc_completed_right",
+				"description": "type_task_sc_completed_right",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "type_task_sc_nullified_right",
+				"description": "type_task_sc_nullified_right",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "type_task_sc_obsolete_right",
+				"description": "type_task_sc_obsolete_right",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "type_task_sc_suspended_right",
+				"description": "type_task_sc_suspended_right",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "type_task_source",
+				"description": "type_task_source",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "type_task_source_code",
+				"description": "type_task_source_code",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "type_task_suspend_mode",
+				"description": "type_task_suspend_mode",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "type_task_title",
+				"description": "type_task_title",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "update_cron_from_date",
+				"description": "update_cron_from_date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "update_cron_to_date",
+				"description": "update_cron_to_date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "update_last_date",
+				"description": "update_last_date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "usoin_key",
+				"description": "usoin_key",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"inputFields": null,
+			"interfaces": [
+			  
+			],
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "OBJECT",
+			"name": "DocumentDocType",
+			"description": "Le type de document, ex: Lettre de sortie, rapport de consultation....",
+			"fields": [
+			  {
+				"name": "code",
+				"description": "Le code du document",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "dtc_code",
+				"description": "Le code DTC du document",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "id",
+				"description": "L'id du type de document",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "label",
+				"description": "Le label du document",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "source",
+				"description": "La source, ex: FORMIDOC, ...",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "temporality",
+				"description": "La temporality dudocument",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"inputFields": null,
+			"interfaces": [
+			  
+			],
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "OBJECT",
+			"name": "Clinisoft",
+			"description": "Contient les données des soins intensifs (Clinisoft) relié à un EDS",
+			"fields": [
+			  {
+				"name": "data",
+				"description": "Clinisoft data",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "ClinisoftData",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "response",
+				"description": "Clinisoft raw response",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"inputFields": null,
+			"interfaces": [
+			  
+			],
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "OBJECT",
+			"name": "LaboAntibiogrammes",
+			"description": "L'antibiogramme d'un résultat de labo",
+			"fields": [
+			  {
+				"name": "code",
+				"description": "code",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "name",
+				"description": "name",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "sensitivity",
+				"description": "sensitivity",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"inputFields": null,
+			"interfaces": [
+			  
+			],
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "OBJECT",
+			"name": "LaboComment",
+			"description": "Un commentaire sur un résultat de laboratoire",
+			"fields": [
+			  {
+				"name": "category",
+				"description": "La catégorie du commentaire",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "text",
+				"description": "Le texte du commentaire",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"inputFields": null,
+			"interfaces": [
+			  
+			],
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "OBJECT",
+			"name": "PassageCareUnit",
+			"description": "Une unité de soins lié à un passage (PosEntity)",
+			"fields": [
+			  {
+				"name": "ambulatory",
+				"description": "Ambulatory",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "begin_date",
+				"description": "La date à laquelle le patient est rentré dans l'unité",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "care_level_code",
+				"description": "care_level_code",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "category",
+				"description": "La categorie",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "cgr_id",
+				"description": "cgr_id",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "creation_date",
+				"description": "getCreation_date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "end_date",
+				"description": "La date à laquelle le patient est sorti de l'unité",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "entity_type",
+				"description": "getEntity_type",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "entry_status",
+				"description": "entry_status",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "label",
+				"description": "getLabel",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "long_label",
+				"description": "getLong_label",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "mnemo",
+				"description": "getMnemo",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "type",
+				"description": "getType",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"inputFields": null,
+			"interfaces": [
+			  
+			],
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "OBJECT",
+			"name": "PassageSermed",
+			"description": "Un service lié à un passage (PosEntity)",
+			"fields": [
+			  {
+				"name": "begin_date",
+				"description": "getBegin_date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "category",
+				"description": "La categorie",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "creation_date",
+				"description": "getCreation_date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "entity_type",
+				"description": "getEntity_type",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "label",
+				"description": "getLabel",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "long_label",
+				"description": "getLong_label",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "mnemo",
+				"description": "getMnemo",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "type",
+				"description": "getType",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"inputFields": null,
+			"interfaces": [
+			  
+			],
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "OBJECT",
+			"name": "PFDatasetStructuredData",
+			"description": "Un champ structuré d'un formulaire",
+			"fields": [
+			  {
+				"name": "attribute_code",
+				"description": "Le code de l'attribut du formulaire",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "value",
+				"description": "La valeur",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"inputFields": null,
+			"interfaces": [
+			  
+			],
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "OBJECT",
+			"name": "ClinisoftData",
+			"description": "Données de clinisoft (Soins intensifs)",
+			"fields": [
+			  {
+				"name": "abbr",
+				"description": "L'abbreviation",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "date",
+				"description": "La date",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "value",
+				"description": "La valeur",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "variable_id",
+				"description": "La variable",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"inputFields": null,
+			"interfaces": [
+			  
+			],
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "INPUT_OBJECT",
+			"name": "ActWhereQuery",
+			"description": "Filtre sur les tasks",
+			"fields": null,
+			"inputFields": [
+			  {
+				"name": "AND",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "INPUT_OBJECT",
+					"name": "ActWhereQuery",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "OR",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "INPUT_OBJECT",
+					"name": "ActWhereQuery",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "completed_date_gte",
+				"description": "filtre completed_date_gte",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "completed_date_lt",
+				"description": "filtre completed_date_lt",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "id_in",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "patient_id_in",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "properties_atc_in",
+				"description": "filtre sur la propriété: ATC",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "properties_dci_in",
+				"description": "filtre sur la propriété: DCI",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "status_code_in",
+				"description": "filtre sur le status (aborted, completed, nullified)",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "task_id_in",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "task_properties_atc_match",
+				"description": "filtre sur la propriété: ATC en faisant une regex",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "task_properties_drug_id_in",
+				"description": "filtre sur la drogue",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  }
+			],
+			"interfaces": null,
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "INPUT_OBJECT",
+			"name": "OrderBy",
+			"description": "Specifier l'ordre",
+			"fields": null,
+			"inputFields": [
+			  {
+				"name": "field",
+				"description": "Le nom du champ",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "type",
+				"description": "La direction: ASC, DESC",
+				"type": {
+				  "kind": "ENUM",
+				  "name": "OrderType",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  }
+			],
+			"interfaces": null,
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "INPUT_OBJECT",
+			"name": "DocumentWhereQuery",
+			"description": "Filtre sur le document",
+			"fields": null,
+			"inputFields": [
+			  {
+				"name": "AND",
+				"description": "Condition de ET entre critères: DocumentWhereQuery",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "INPUT_OBJECT",
+					"name": "DocumentWhereQuery",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "OR",
+				"description": "Condition de OU entre critères: DocumentWhereQuery",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "INPUT_OBJECT",
+					"name": "DocumentWhereQuery",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "content_text_match",
+				"description": "Le contenu du document doit contenir",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "doctype_code_in",
+				"description": "Les documents doivent contenir le doctype_code",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "doctype_dtc_code_in",
+				"description": "Les documents doivent contenir le doctype_dtc_code",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "doctype_id_in",
+				"description": "Les documents doivent contenir le doctype_id",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "eds_id_in",
+				"description": "Les documents doivent être liés aux eds id",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "id_in",
+				"description": "Les ids des documents doivent être",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "insertion_date_gte",
+				"description": "La date d'insertion doit être plus grande ou égale",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "insertion_date_lt",
+				"description": "La date d'insertion doit être plus petite",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "material_label_match",
+				"description": "material_label_match",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "patient_id_in",
+				"description": "Les documents doivent être liés aux patients",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  }
+			],
+			"interfaces": null,
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "INPUT_OBJECT",
+			"name": "EdsWhereQuery",
+			"description": "Filtre sur le EDS",
+			"fields": null,
+			"inputFields": [
+			  {
+				"name": "AND",
+				"description": "Rajout d'une contrainte AND",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "INPUT_OBJECT",
+					"name": "EdsWhereQuery",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "OR",
+				"description": "Rajout d'une contrainte OR",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "INPUT_OBJECT",
+					"name": "EdsWhereQuery",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "begin_date_gte",
+				"description": "Le début de la date de l'EDS doit être plus grand (inclusive)",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "begin_date_lt",
+				"description": "Le début de la date de l'EDS doit être plus petit (exclusif)",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "end_date_exists",
+				"description": "Filtre sur l'existance de la date de fin de l'EDS",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Boolean",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "id_in",
+				"description": "Les id des eds doivent être contenu",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "participations_some",
+				"description": "Spécification des filtres de requêtage sur les participations associées à cet eds",
+				"type": {
+				  "kind": "INPUT_OBJECT",
+				  "name": "ParticipationWhereQuery",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "passages_some",
+				"description": "Spécification des filtres de requêtage sur les passages associés à cet eds",
+				"type": {
+				  "kind": "INPUT_OBJECT",
+				  "name": "PassageWhereQuery",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "patient_id_in",
+				"description": "Les eds doivent être lié aux ids patients des patients",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "patient_list_id_eq",
+				"description": "L'iD de la liste des patients",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  }
+			],
+			"interfaces": null,
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "INPUT_OBJECT",
+			"name": "ParticipationWhereQuery",
+			"description": "Filtre sur la participation",
+			"fields": null,
+			"inputFields": [
+			  {
+				"name": "eds",
+				"description": "Filtre sur l'eds",
+				"type": {
+				  "kind": "INPUT_OBJECT",
+				  "name": "EdsWhereQuery",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "function_eq",
+				"description": "Filtre sur la fonction (CHAMBRE/LIT...)",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  }
+			],
+			"interfaces": null,
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "INPUT_OBJECT",
+			"name": "PassageWhereQuery",
+			"description": "Filtre sur le passage",
+			"fields": null,
+			"inputFields": [
+			  {
+				"name": "begin_date_gte",
+				"description": "filtre",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "begin_date_lt",
+				"description": "filtre",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "care_unit_cgr_id_in",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "care_unit_mnemo_in",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "eds",
+				"description": "filtre",
+				"type": {
+				  "kind": "INPUT_OBJECT",
+				  "name": "EdsWhereQuery",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "end_date_exists",
+				"description": "Un passage actif peut être trouvé en spécifiant que la end date n'existe pas",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Boolean",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "end_date_lte",
+				"description": "Filtre sur la date de fin du passage, plus petit que",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "id_in",
+				"description": "filtre",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  }
+			],
+			"interfaces": null,
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "INPUT_OBJECT",
+			"name": "EquipmentWhereQuery",
+			"description": "Filtre sur l'équipement",
+			"fields": null,
+			"inputFields": [
+			  {
+				"name": "AND",
+				"description": "filter",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "INPUT_OBJECT",
+					"name": "EquipmentWhereQuery",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "OR",
+				"description": "filter",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "INPUT_OBJECT",
+					"name": "EquipmentWhereQuery",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "calculated_put_datetime_gte",
+				"description": "Le début de la date de la mise en place de l'équipement doit être plus grand (inclusive)",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "calculated_put_datetime_lt",
+				"description": "Le début de la date de la mise en place de l'équipement doit être plus petit (exclusif)",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "dic_id_in",
+				"description": "Filtre sur le dictionnaire du type de l'équipement",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "input_invalidate_user_id_exists",
+				"description": "Filtre sur l'invalidation d'un user",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Boolean",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "label_match",
+				"description": "Filtre sur le label avec une regex",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "short_label_match",
+				"description": "Filtre sur le short label avec une regex",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  }
+			],
+			"interfaces": null,
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "INPUT_OBJECT",
+			"name": "LaboWhereQuery",
+			"description": "Filtre sur le labo",
+			"fields": null,
+			"inputFields": [
+			  {
+				"name": "AND",
+				"description": "filter",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "INPUT_OBJECT",
+					"name": "LaboWhereQuery",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "OR",
+				"description": "filter",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "INPUT_OBJECT",
+					"name": "LaboWhereQuery",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "analyse_label_in",
+				"description": "filter",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "analyse_label_match",
+				"description": "filter",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "careunit_mnemo_in",
+				"description": "filter",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "dosage_code_in",
+				"description": "filtre sur le dosage code",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "dosage_label_in",
+				"description": "filter",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "dosage_label_match",
+				"description": "filter",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "eds_id_in",
+				"description": "filter",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "lab_no_in",
+				"description": "filter",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "lab_no_orig_in",
+				"description": "filter",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "loinc_exists",
+				"description": "loinc exists",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Boolean",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "material_label_in",
+				"description": "filter",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "patient_id_in",
+				"description": "filter",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "sample_date_gte",
+				"description": "filter",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "sample_date_lt",
+				"description": "filter",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "validation_date_gte",
+				"description": "filter",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "validation_date_lt",
+				"description": "filter",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "value_str_in",
+				"description": "filter",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  }
+			],
+			"interfaces": null,
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "INPUT_OBJECT",
+			"name": "PatientWhereQuery",
+			"description": "Filtre sur les patients",
+			"fields": null,
+			"inputFields": [
+			  {
+				"name": "AND",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "INPUT_OBJECT",
+					"name": "PatientWhereQuery",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "OR",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "INPUT_OBJECT",
+					"name": "PatientWhereQuery",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "birth_datetime_str_match",
+				"description": "filtre",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "birth_year_eq",
+				"description": "filtre",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Int",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "death_datetime_exists",
+				"description": "Spécifie si le patient a une date de décés ou pas",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Boolean",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "eds_some",
+				"description": "Filtre sur les critères d'un eds associé à un patient",
+				"type": {
+				  "kind": "INPUT_OBJECT",
+				  "name": "EdsWhereQuery",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "first_name_eq",
+				"description": "Filtre sur le prénom",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "first_name_match",
+				"description": "filtre",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "general_consent_in",
+				"description": "Filtre sur le consentement général",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "general_consent_nin",
+				"description": "Filtre sur le consentement général (NOT in)",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "id_in",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "last_name_eq",
+				"description": "Filtre sur le nom de famille",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "last_name_match",
+				"description": "filtre",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "passage_some",
+				"description": "Filtre sur les critères d'un passage associé à un patient",
+				"type": {
+				  "kind": "INPUT_OBJECT",
+				  "name": "PassageWhereQuery",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  }
+			],
+			"interfaces": null,
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "INPUT_OBJECT",
+			"name": "PFDatasetWhereQuery",
+			"description": "Filtre sur le formulaire",
+			"fields": null,
+			"inputFields": [
+			  {
+				"name": "AND",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "INPUT_OBJECT",
+					"name": "PFDatasetWhereQuery",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "OR",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "INPUT_OBJECT",
+					"name": "PFDatasetWhereQuery",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "application_code_in",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "creation_date_gte",
+				"description": "filtre",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "creation_date_lt",
+				"description": "filtre",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "datacontext_code_in",
+				"description": "Filtre sur le data context",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "datacontext_code_match",
+				"description": "Pour les notes de suite il suffit de préciser ^NOTE_",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "eds_id",
+				"description": "filtre",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "patient_id",
+				"description": "filtre",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "patient_id_in",
+				"description": "Les documents doivent être liés aux patients",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "sermed_id_in",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "structured_data_value_match",
+				"description": "recherche sur les structured data",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  }
+			],
+			"interfaces": null,
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "INPUT_OBJECT",
+			"name": "PosEntityWhereQuery",
+			"description": "Filtre sur le POS organigramme structurel",
+			"fields": null,
+			"inputFields": [
+			  {
+				"name": "AND",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "INPUT_OBJECT",
+					"name": "PosEntityWhereQuery",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "OR",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "INPUT_OBJECT",
+					"name": "PosEntityWhereQuery",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "category_in",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "entity_type_in",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "id_in",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "label_in",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "long_label_in",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "mnemo_in",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "type_in",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  }
+			],
+			"interfaces": null,
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "INPUT_OBJECT",
+			"name": "PrescriptionWhereQuery",
+			"description": "Filtre sur les prescriptions",
+			"fields": null,
+			"inputFields": [
+			  {
+				"name": "AND",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "INPUT_OBJECT",
+					"name": "PrescriptionWhereQuery",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "OR",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "INPUT_OBJECT",
+					"name": "PrescriptionWhereQuery",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "category_code_in",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "creation_date_gte",
+				"description": "filtre",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "creation_date_lt",
+				"description": "filtre",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Date",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "eds_id_in",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "id_in",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "long_name_match",
+				"description": "filtre",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "patient_id_in",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "short_name_match",
+				"description": "filtre",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "status_in",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "type_id_in",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  }
+			],
+			"interfaces": null,
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "INPUT_OBJECT",
+			"name": "ClinisoftWhereQuery",
+			"description": "Filtre sur clinisoft",
+			"fields": null,
+			"inputFields": [
+			  {
+				"name": "eds_id_eq",
+				"description": "Les id des eds (ne devraient pas pouvoir se setter via graphql)",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "request_eq",
+				"description": "Les eds doivent être lié aux ids patients des patients",
+				"type": {
+				  "kind": "NON_NULL",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  }
+			],
+			"interfaces": null,
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "INPUT_OBJECT",
+			"name": "PFDatasetStructuredDataWhereQuery",
+			"description": "Filtre sur les champs structurés d'un formulaire",
+			"fields": null,
+			"inputFields": [
+			  {
+				"name": "attribute_code_in",
+				"description": "filtre",
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  },
+			  {
+				"name": "value_match",
+				"description": "filtre sur la valeur",
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"defaultValue": null
+			  }
+			],
+			"interfaces": null,
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "ENUM",
+			"name": "OrderType",
+			"description": "Spécifie l'ordre",
+			"fields": null,
+			"inputFields": null,
+			"interfaces": null,
+			"enumValues": [
+			  {
+				"name": "ASC",
+				"description": "",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "DESC",
+				"description": "",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "ENUM",
+			"name": "MagellanChronoUnit",
+			"description": "",
+			"fields": null,
+			"inputFields": null,
+			"interfaces": null,
+			"enumValues": [
+			  {
+				"name": "MINUTES",
+				"description": "",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "HOURS",
+				"description": "",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "DAYS",
+				"description": "",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "YEARS",
+				"description": "",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "OBJECT",
+			"name": "__Schema",
+			"description": "A GraphQL Introspection defines the capabilities of a GraphQL server. It exposes all available types and directives on the server, the entry points for query, mutation, and subscription operations.",
+			"fields": [
+			  {
+				"name": "types",
+				"description": "A list of all types supported by this server.",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "NON_NULL",
+				  "name": null,
+				  "ofType": {
+					"kind": "LIST",
+					"name": null,
+					"ofType": {
+					  "kind": "NON_NULL",
+					  "name": null,
+					  "ofType": {
+						"kind": "OBJECT",
+						"name": "__Type",
+						"ofType": null
+					  }
+					}
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "queryType",
+				"description": "The type that query operations will be rooted at.",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "NON_NULL",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "__Type",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "mutationType",
+				"description": "If this server supports mutation, the type that mutation operations will be rooted at.",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "__Type",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "directives",
+				"description": "'A list of all directives supported by this server.",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "NON_NULL",
+				  "name": null,
+				  "ofType": {
+					"kind": "LIST",
+					"name": null,
+					"ofType": {
+					  "kind": "NON_NULL",
+					  "name": null,
+					  "ofType": {
+						"kind": "OBJECT",
+						"name": "__Directive",
+						"ofType": null
+					  }
+					}
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "subscriptionType",
+				"description": "'If this server support subscription, the type that subscription operations will be rooted at.",
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "__Type",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"inputFields": null,
+			"interfaces": [
+			  
+			],
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "OBJECT",
+			"name": "__Type",
+			"description": null,
+			"fields": [
+			  {
+				"name": "kind",
+				"description": null,
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "NON_NULL",
+				  "name": null,
+				  "ofType": {
+					"kind": "ENUM",
+					"name": "__TypeKind",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "name",
+				"description": null,
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "description",
+				"description": null,
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "fields",
+				"description": null,
+				"args": [
+				  {
+					"name": "includeDeprecated",
+					"description": null,
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Boolean",
+					  "ofType": null
+					},
+					"defaultValue": "false"
+				  }
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "NON_NULL",
+					"name": null,
+					"ofType": {
+					  "kind": "OBJECT",
+					  "name": "__Field",
+					  "ofType": null
+					}
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "interfaces",
+				"description": null,
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "NON_NULL",
+					"name": null,
+					"ofType": {
+					  "kind": "OBJECT",
+					  "name": "__Type",
+					  "ofType": null
+					}
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "possibleTypes",
+				"description": null,
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "NON_NULL",
+					"name": null,
+					"ofType": {
+					  "kind": "OBJECT",
+					  "name": "__Type",
+					  "ofType": null
+					}
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "enumValues",
+				"description": null,
+				"args": [
+				  {
+					"name": "includeDeprecated",
+					"description": null,
+					"type": {
+					  "kind": "SCALAR",
+					  "name": "Boolean",
+					  "ofType": null
+					},
+					"defaultValue": "false"
+				  }
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "NON_NULL",
+					"name": null,
+					"ofType": {
+					  "kind": "OBJECT",
+					  "name": "__EnumValue",
+					  "ofType": null
+					}
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "inputFields",
+				"description": null,
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "NON_NULL",
+					"name": null,
+					"ofType": {
+					  "kind": "OBJECT",
+					  "name": "__InputValue",
+					  "ofType": null
+					}
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "ofType",
+				"description": null,
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "OBJECT",
+				  "name": "__Type",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"inputFields": null,
+			"interfaces": [
+			  
+			],
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "ENUM",
+			"name": "__TypeKind",
+			"description": "An enum describing what kind of type a given __Type is",
+			"fields": null,
+			"inputFields": null,
+			"interfaces": null,
+			"enumValues": [
+			  {
+				"name": "SCALAR",
+				"description": "Indicates this type is a scalar.",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "OBJECT",
+				"description": "Indicates this type is an object. `fields` and `interfaces` are valid fields.",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "INTERFACE",
+				"description": "Indicates this type is an interface. `fields` and `possibleTypes` are valid fields.",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "UNION",
+				"description": "Indicates this type is a union. `possibleTypes` is a valid field.",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "ENUM",
+				"description": "Indicates this type is an enum. `enumValues` is a valid field.",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "INPUT_OBJECT",
+				"description": "Indicates this type is an input object. `inputFields` is a valid field.",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "LIST",
+				"description": "Indicates this type is a list. `ofType` is a valid field.",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "NON_NULL",
+				"description": "Indicates this type is a non-null. `ofType` is a valid field.",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "OBJECT",
+			"name": "__Field",
+			"description": null,
+			"fields": [
+			  {
+				"name": "name",
+				"description": null,
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "NON_NULL",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "description",
+				"description": null,
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "args",
+				"description": null,
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "NON_NULL",
+				  "name": null,
+				  "ofType": {
+					"kind": "LIST",
+					"name": null,
+					"ofType": {
+					  "kind": "NON_NULL",
+					  "name": null,
+					  "ofType": {
+						"kind": "OBJECT",
+						"name": "__InputValue",
+						"ofType": null
+					  }
+					}
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "type",
+				"description": null,
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "NON_NULL",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "__Type",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "isDeprecated",
+				"description": null,
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "NON_NULL",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "Boolean",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "deprecationReason",
+				"description": null,
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"inputFields": null,
+			"interfaces": [
+			  
+			],
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "OBJECT",
+			"name": "__InputValue",
+			"description": null,
+			"fields": [
+			  {
+				"name": "name",
+				"description": null,
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "NON_NULL",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "description",
+				"description": null,
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "type",
+				"description": null,
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "NON_NULL",
+				  "name": null,
+				  "ofType": {
+					"kind": "OBJECT",
+					"name": "__Type",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "defaultValue",
+				"description": null,
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"inputFields": null,
+			"interfaces": [
+			  
+			],
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "OBJECT",
+			"name": "__EnumValue",
+			"description": null,
+			"fields": [
+			  {
+				"name": "name",
+				"description": null,
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "NON_NULL",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "String",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "description",
+				"description": null,
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "isDeprecated",
+				"description": null,
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "NON_NULL",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "Boolean",
+					"ofType": null
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "deprecationReason",
+				"description": null,
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"inputFields": null,
+			"interfaces": [
+			  
+			],
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "OBJECT",
+			"name": "__Directive",
+			"description": null,
+			"fields": [
+			  {
+				"name": "name",
+				"description": null,
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "description",
+				"description": null,
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "String",
+				  "ofType": null
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "locations",
+				"description": null,
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "LIST",
+				  "name": null,
+				  "ofType": {
+					"kind": "NON_NULL",
+					"name": null,
+					"ofType": {
+					  "kind": "ENUM",
+					  "name": "__DirectiveLocation",
+					  "ofType": null
+					}
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "args",
+				"description": null,
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "NON_NULL",
+				  "name": null,
+				  "ofType": {
+					"kind": "LIST",
+					"name": null,
+					"ofType": {
+					  "kind": "NON_NULL",
+					  "name": null,
+					  "ofType": {
+						"kind": "OBJECT",
+						"name": "__InputValue",
+						"ofType": null
+					  }
+					}
+				  }
+				},
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "onOperation",
+				"description": null,
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Boolean",
+				  "ofType": null
+				},
+				"isDeprecated": true,
+				"deprecationReason": "Use `locations`."
+			  },
+			  {
+				"name": "onFragment",
+				"description": null,
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Boolean",
+				  "ofType": null
+				},
+				"isDeprecated": true,
+				"deprecationReason": "Use `locations`."
+			  },
+			  {
+				"name": "onField",
+				"description": null,
+				"args": [
+				  
+				],
+				"type": {
+				  "kind": "SCALAR",
+				  "name": "Boolean",
+				  "ofType": null
+				},
+				"isDeprecated": true,
+				"deprecationReason": "Use `locations`."
+			  }
+			],
+			"inputFields": null,
+			"interfaces": [
+			  
+			],
+			"enumValues": null,
+			"possibleTypes": null
+		  },
+		  {
+			"kind": "ENUM",
+			"name": "__DirectiveLocation",
+			"description": "An enum describing valid locations where a directive can be placed",
+			"fields": null,
+			"inputFields": null,
+			"interfaces": null,
+			"enumValues": [
+			  {
+				"name": "QUERY",
+				"description": "Indicates the directive is valid on queries.",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "MUTATION",
+				"description": "Indicates the directive is valid on mutations.",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "FIELD",
+				"description": "Indicates the directive is valid on fields.",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "FRAGMENT_DEFINITION",
+				"description": "Indicates the directive is valid on fragment definitions.",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "FRAGMENT_SPREAD",
+				"description": "Indicates the directive is valid on fragment spreads.",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "INLINE_FRAGMENT",
+				"description": "Indicates the directive is valid on inline fragments.",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "SCHEMA",
+				"description": "Indicates the directive is valid on a schema SDL definition.",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "SCALAR",
+				"description": "Indicates the directive is valid on a scalar SDL definition.",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "OBJECT",
+				"description": "Indicates the directive is valid on an object SDL definition.",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "FIELD_DEFINITION",
+				"description": "Indicates the directive is valid on a field SDL definition.",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "ARGUMENT_DEFINITION",
+				"description": "Indicates the directive is valid on a field argument SDL definition.",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "INTERFACE",
+				"description": "Indicates the directive is valid on an interface SDL definition.",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "UNION",
+				"description": "Indicates the directive is valid on an union SDL definition.",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "ENUM",
+				"description": "Indicates the directive is valid on an enum SDL definition.",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "ENUM_VALUE",
+				"description": "Indicates the directive is valid on an enum value SDL definition.",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "INPUT_OBJECT",
+				"description": "Indicates the directive is valid on an input object SDL definition.",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  },
+			  {
+				"name": "INPUT_FIELD_DEFINITION",
+				"description": "Indicates the directive is valid on an input object field SDL definition.",
+				"isDeprecated": false,
+				"deprecationReason": null
+			  }
+			],
+			"possibleTypes": null
+		  }
+		],
+		"directives": [
+		  {
+			"name": "include",
+			"description": "Directs the executor to include this field or fragment only when the `if` argument is true",
+			"locations": [
+			  "FIELD",
+			  "FRAGMENT_SPREAD",
+			  "INLINE_FRAGMENT"
+			],
+			"args": [
+			  {
+				"name": "if",
+				"description": "Included when true.",
+				"type": {
+				  "kind": "NON_NULL",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "Boolean",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  }
+			]
+		  },
+		  {
+			"name": "skip",
+			"description": "Directs the executor to skip this field or fragment when the `if`'argument is true.",
+			"locations": [
+			  "FIELD",
+			  "FRAGMENT_SPREAD",
+			  "INLINE_FRAGMENT"
+			],
+			"args": [
+			  {
+				"name": "if",
+				"description": "Skipped when true.",
+				"type": {
+				  "kind": "NON_NULL",
+				  "name": null,
+				  "ofType": {
+					"kind": "SCALAR",
+					"name": "Boolean",
+					"ofType": null
+				  }
+				},
+				"defaultValue": null
+			  }
+			]
+		  },
+		  {
+			"name": "defer",
+			"description": "This directive allows results to be deferred during execution",
+			"locations": [
+			  "FIELD"
+			],
+			"args": [
+			  
+			]
+		  }
+		]
+	  }
+	},
+	"errors": [
+	  
+	],
+	"dataPresent": true,
+	"extensions": null
+  }
