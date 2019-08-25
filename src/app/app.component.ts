@@ -47,6 +47,7 @@ export class AppComponent {
   public currentConfig: QueryBuilderConfig = { fields: {} };
   public query: any = { rules: [] };
   public graphqlSchema: any;
+  public graphqlTypes: {};
   public graphqlSchemaRoot;
   public graphqlSelectedDocument;
 
@@ -61,6 +62,7 @@ export class AppComponent {
     this.dataSource.data = this.buildFileTree(TREE_DATA, 0);
   }
   ngOnInit() {
+    this.graphqlTypes = {};
     this.loadData();
   }
 
@@ -88,21 +90,30 @@ export class AppComponent {
     this.graphqlQuery = graphqlQueryPrefix + graphqlCoreQuery + graphqlQuerySuffix;
   }
 
+  getRecursiveFields(name, n) {
+    var result = {};
+    var type = this.graphqlTypes[name];
+    type.fields.forEach(f => {
+      if(n < 10 && f.type.kind == "OBJECT") {
+        result[f.name] = this.getRecursiveFields(f.type.name, n + 1);
+      }
+      else result[f.name] = null
+    });
+    return result;
+  }
+
   documentChange(event) {
     var typeName = event.type.ofType.name;
     this.graphqlSelectedDocument = this.graphqlSchema.filter(gs => gs.name == typeName)[0];
-    var scalarTypes = this.graphqlSelectedDocument.fields.filter(f => f.type.kind == "SCALAR" || f.type.kind == "LIST");
-    console.log(scalarTypes);
-    var objectTypes = this.graphqlSelectedDocument.fields.filter(f => !(f.type.kind == "SCALAR" || f.type.kind == "LIST"));
-    console.log(objectTypes);
-    this.dataSource.data = this.buildFileTree(this.graphqlSelectedDocument.fields.map(f => {
-      if(f.type.kind == "SCALAR" || (f.type.ofType && f.type.ofType.kind == "SCALAR")) return f.name
+    var treeObjects = {};
+    this.graphqlSelectedDocument.fields.forEach(f => {
+      if(f.type.kind == "SCALAR" || (f.type.ofType && f.type.ofType.kind == "SCALAR")) treeObjects[f.name] = null
       else {
-        var object = {};
-        object[f.name] = ["paf", "pouf"]
-        return object;
+        treeObjects[f.name] = this.getRecursiveFields(f.type.name, 0)
       }    
-    }), 0);
+    });
+    console.log(treeObjects);
+    this.dataSource.data = this.buildFileTree(treeObjects, 0);
   }
 
   buildFileTree(obj: {[key: string]: any}, level: number): TodoItemNode[] {
@@ -158,10 +169,11 @@ export class AppComponent {
   public loadData() {
     this.httpClient.get("assets/schema.json")
       .subscribe(data$ => {
-
-        console.log(data$['data'].__schema)
         this.graphqlSchemaRoot = this.graphqlSchema = data$['data'].__schema.types[0];
         this.graphqlSchema = data$['data'].__schema.types;
+        this.graphqlSchema.forEach(type => {
+          this.graphqlTypes[type.name] = type;
+        });
 
         TREE_DATA = this.graphqlSchemaRoot['fields'].map(field => {
           field.name
